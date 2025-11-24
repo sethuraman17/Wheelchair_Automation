@@ -1,3 +1,7 @@
+# Demo Intro
+
+https://github.com/user-attachments/assets/94ce1b13-7564-4d9c-9b8f-81f6047eb340
+
 # Advanced Robotic Control System
 
 This project is a collection of Python scripts for controlling a robot using various advanced methods, including computer vision and voice recognition. It provides a flexible and extensible framework for developing and testing different robot control strategies.
