@@ -1,57 +1,101 @@
-# Wheelchair Automation
+# Advanced Robotic Control System
 
-![Repo Owner](https://avatars.githubusercontent.com/u/116188101?v=4)
-[Visit the Repository](https://github.com/sethuraman17/Wheelchair_Automation)
+This project is a collection of Python scripts for controlling a robot using various advanced methods, including computer vision and voice recognition. It provides a flexible and extensible framework for developing and testing different robot control strategies.
 
----
+## Features
 
-**Revolutionize mobility with intelligent, Python-powered automation.**
+- **Color Following**: The robot can detect and follow objects of a specific color.
+- **Face Tracking**: The robot can detect and track human faces.
+- **Gaze Control**: The robot's movement can be controlled by the user's gaze.
+- **Hand Gesture Recognition**: The robot can be controlled using hand gestures.
+- **Voice Control**: The robot can be controlled using voice commands.
+- **Mobile Control**: The robot can be controlled using a mobile interface.
+- **User Interface**: A user-friendly interface for controlling the robot.
 
-Wheelchair Automation is an innovative public project aiming to enhance accessibility and independence for mobility-impaired individuals by integrating modern automation technologies into wheelchair systems. Every line of code is designed to push forward the boundaries of assistive robotics, making life easier, safer, and smarter.
+## Getting Started
 
-## 🚀 Features
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-- **100% Python:** Built entirely in Python, ensuring clarity, scalability, and the vast support of the Python ecosystem.
-- **Open Source:** Freely available for contributions, experimentation, or as a foundation for your own accessibility solutions.
-- **Modern Architecture:** Structured for readability, modularity, and future expansion—making it approachable for both beginners and advanced developers.
+### Prerequisites
 
-## 🎯 Purpose
+- Python 3.x
+- pip (Python package installer)
+- A webcam or camera module connected to your system
 
-The ultimate goal of Wheelchair Automation is to empower users through:
-- Autonomous navigation and control options.
-- Integration with sensors for obstacle detection and safe maneuvering.
-- Customizable modules for personalized wheelchair experiences.
+### Installation
 
-## 💡 Why You’ll Love It
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/your-username/your-repository-name.git
+    cd your-repository-name
+    ```
 
-- **Developers:** Dive into clean Python code with robust architecture ready for hacking, improving, and learning.
-- **Viewers:** Witness the forefront of assistive technology and be inspired by how code can change lives.
-- **Shock Value:** This isn’t just automation—it’s a leap toward inclusive, mindful innovation.
+2.  **Install the required dependencies:**
+    It is recommended to create a virtual environment to manage the project's dependencies.
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+    Install the necessary libraries using pip. A `requirements.txt` file is not yet available, but you can install the required packages manually. Key dependencies include:
+    - `opencv-python`
+    - `numpy`
+    - `dlib`
+    - `tensorflow`
+    - `SpeechRecognition`
+    - `pyaudio`
 
-## 🛠️ Getting Started
+    You can install them like this:
+    ```sh
+    pip install opencv-python numpy dlib tensorflow SpeechRecognition pyaudio
+    ```
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/sethuraman17/Wheelchair_Automation.git
-   ```
-2. Explore the codebase (Python files are the heart of intelligence here).
-3. Read inline comments for insights, or contribute to documentation and new features.
+## Modules
 
-## 🧭 Roadmap
+This project is organized into several modules, each responsible for a specific functionality.
 
-Wheelchair Automation is evolving rapidly. Planned upgrades include:
-- Mobile app control
-- Real-time monitoring and analytics
-- Community-driven module marketplace
+- **`MotorModule.py`**: This module provides a low-level interface for controlling the robot's motors. It includes functions for moving the robot forward, backward, and turning.
 
-## 🤝 Contributing
+- **`KeyboardPressModule.py`**: This module allows for controlling the robot using keyboard inputs, which is useful for testing and debugging.
 
-We welcome all pull requests, issues, and ideas! Help us shape the future of mobility tech.
+- **`CustomRPIRobot/`**: This directory contains scripts related to custom Raspberry Pi robot functionalities, including lane detection and color picking.
 
-## 📄 License
+- **`Hand_Gesture/`**: This module enables hand gesture recognition for robot control. It uses computer vision to detect and interpret hand gestures.
 
-This project currently does not specify a license. For reuse and contributions, please contact [sethuraman17](https://github.com/sethuraman17).
+- **`Mobile/`**: This directory contains a script for a mobile interface to control the robot.
 
----
+- **`User_Interface/`**: This module provides a graphical user interface for controlling the robot.
 
-**Be the change in assistive technology. Code for a cause, learn with passion, innovate for impact.**
+- **`colour_following_robot/`**: This module allows the robot to follow an object of a specific color.
+
+- **`face_tracking_robot/`**: This module enables the robot to track faces in real-time.
+
+- **`gaze_control/`**: This module implements gaze control, allowing the user to control the robot's movement with their eyes.
+
+- **`voice_control_robot/`**: This module provides voice command functionality for controlling the robot.
+
+## Usage
+
+To run a specific module, you can execute the main script within that module's directory. For example, to run the face tracking module:
+
+```sh
+python face_tracking_robot/face_tracking.py
+```
+
+## Dependencies
+
+This project relies on the following Python libraries:
+
+- **OpenCV**: For computer vision tasks such as face detection, color tracking, and hand gesture recognition.
+- **NumPy**: For numerical operations and handling image data.
+- **dlib**: For facial landmark detection, used in the gaze control module.
+- **TensorFlow**: For machine learning tasks, particularly in the gaze control module.
+- **SpeechRecognition**: For converting spoken language into text.
+- **PyAudio**: As a dependency for `SpeechRecognition` to handle audio input.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
