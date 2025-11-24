@@ -100,6 +100,14 @@ This project relies on the following Python libraries:
 
 Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
 
-## License
+## Results
 
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+<img width="1218" height="678" alt="3d room" src="https://github.com/user-attachments/assets/edfb58bb-2c53-4c97-8a23-1c56e762a66f" />
+<img width="1268" height="700" alt="gaze speech" src="https://github.com/user-attachments/assets/4eb8ae7d-07df-4b08-9bfe-b61ec20d9605" />
+<img width="1100" height="652" alt="gaze" src="https://github.com/user-attachments/assets/d4cdc7e5-3d98-41b8-809e-e4c6a141ac2a" />
+<img width="1177" height="672" alt="hand" src="https://github.com/user-attachments/assets/b1d86c5e-b8e8-485b-9a13-b9aa10951fbc" />
+<img width="1230" height="692" alt="face" src="https://github.com/user-attachments/assets/d5e87a9e-464d-4e97-901b-69e5b7200d33" />
+<img width="1256" height="686" alt="lane" src="https://github.com/user-attachments/assets/35a5fc70-b742-4b7c-8859-29e2a74f669c" />
+
+
+
